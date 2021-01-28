@@ -1,0 +1,129 @@
+body {
+    background-color: lightgray;
+}
+
+.navbar-padding {
+    padding-left: 20px;
+}
+.navbar-brand-margin {
+    margin-left: 200px;
+    font-weight: 900;
+    font-style: italic;
+    color: grey !important;
+}
+.navbar-modal-dropdown {
+    margin-right: 100px;
+}
+.modal-header-border {
+    border-bottom: none;
+    padding-bottom: 10px;
+}
+.modal-icons {
+    display: flex;
+    padding-top: 2px;
+    padding-bottom: 20px;
+}
+.camera-icon {
+    margin-right: 5px;
+}
+.upload-photo {
+    width: 40px;
+}
+.pin-location {
+    width: 40px;
+}
+
+.dropdown-menu {
+    left:auto;
+    right:130px;
+    color: black;
+}
+
+.dropdown-toggle::after {
+    color: black;
+}
+
+.grid-list-view {
+    background-color: white;
+    padding: 10px;
+}
+.grid-btn-hover {
+    color: rgb(194, 194, 194);
+}
+.grid-list-buttons:hover {
+    color: white;
+}
+
+.instagram-post {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.post-header {
+    display: flex;
+    background-color: white;
+    border-radius: 5px 5px 0px 0px;
+    margin-top: 40px
+}
+
+.post-title {
+    padding: 10px;
+    width: 80%;
+}
+
+.post-date {
+    padding-top: 10px;
+    width: 20%;
+    margin-right: 2px;
+    text-align: right;
+}
+
+.post-footer {
+    background-color: white;
+    margin-bottom: 40px;
+    padding: 10px;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.post-like-comment {
+    display: flex;
+}
+.post-comment {
+    margin-left: 5px;
+}
+
+.vertical-elipsis {
+    color: black;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+@media (min-width: 768px) {
+    .navbar-brand-margin {
+        margin-left: 200px;
+        font-weight: 900;
+        font-style: italic;
+        color: grey;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-brand-margin {
+        margin-left: 0;
+        font-weight: 900;
+        font-style: italic;
+        color: grey;
+    }
+}
+@media (min-width: 768px) {
+    .navbar-modal-dropdown {
+        margin-right: 100px;
+    }
+}
+/* @media (max-width: 768px) {
+    .navbar-modal-dropdown {
+        margin-right: 0;
+    }
+} */

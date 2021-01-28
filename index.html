@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/eeac570623.js" crossorigin="anonymous"></script>
+    <title>The Instagram photo feed (with Bootstrap) </title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md bg-light navbar-light navbar-padding">
+        <a class="navbar-brand mr-auto navbar-brand-margin" href="#"><i class="fab fa-instagram" ></i> Instagram</a>
+
+        <div class="navbar-modal-dropdown">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">                
+
+                    <button type="button" class="btn btn-info btn-md bg-success text-white" data-toggle="modal" data-target="#myModal">Create a new post</button>
+
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header modal-header-border">
+
+                                    <textarea class="modal-textarea rounded" rows="3" cols="75"></textarea>
+                                </div>
+                                <div class="modal-body modal-icons">
+                                    <div class="camera-icon"><button class="btn btn-light border border-secondary upload-photo"><i class="fas fa-camera"></i></button></div>
+                                    <div class="map-icon"><button class="btn btn-light border border-secondary pin-location"><i class="fas fa-map-marker-alt"></i></button></div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-success" data-dismiss="modal">Publish</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>                
+
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-cog" style="color: black;"></i></a>
+                    <div class="dropdown-menu " aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Log Out</a>
+                    </div>                
+                </li>
+        </div>
+    </nav>
+
+
+    <div class="grid-list-view">
+        <div class="well well-sm">
+            <div class="text-center">
+                <div class="grid-list-buttons">
+                    <a href="#" id="grid" class="btn btn-default btn-sm btn-outline-secondary border-0"><i class="fas fa-th"></i></a>
+                    <a href="#" id="list" class="btn btn-default btn-sm btn-outline-secondary border-0"><i class="fas fa-list"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid instagram-post">
+        <div id="row-container" class="row no-gutters">
+
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 col-centered">
+                <div class="thumbnail">
+                    <div class="post-header">
+                        <div class="post-title"><h5>This is my first photo</h5></div>
+                        <div class="post-date"><p>12/14</p></div>
+                    </div>
+                    <img src="http://placeimg.com/640/480/nature" alt="Nature" style="width:100%">
+                    <div class="post-footer">
+                        <div class="likes">
+                            <p>23 Likes</p>
+                        </div>
+                        <div class="caption">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                               labore et dolore magna aliqua. 
+                               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                               commodo consequat.</p>
+                        </div>
+                        <div class="post-like-comment">
+                            <button type="button" class="btn btn-light btn-outline-dark border-0 post-heart"><i class="far fa-heart"></i></button>
+                            <input class="form-control post-comment border-0" type="text" name="comment" placeholder="Comment...">
+                            <button type="button" class="btn btn-link border-0 vertical-elipsis"><i class="fas fa-ellipsis-v"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 col-centered">
+                <div class="thumbnail">
+                    <div class="post-header">
+                        <div class="post-title"><h5>This is my first photo</h5></div>
+                        <div class="post-date"><p>12/14</p></div>
+                    </div>
+                    <img src="http://placeimg.com/640/480/animals" alt="Animals" style="width:100%">
+                    <div class="post-footer">
+                        <div class="likes">
+                            <p>23 Likes</p>
+                        </div>
+                        <div class="caption">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                                commodo consequat.</p>
+                        </div>
+                        <div class="post-like-comment">
+                            <button type="button" class="btn btn-light btn-outline-dark border-0 post-heart"><i class="far fa-heart"></i></button>
+                            <input class="form-control post-comment border-0" type="text" name="comment" placeholder="Comment...">
+                            <button type="button" class="btn btn-link border-0 vertical-elipsis"><i class="fas fa-ellipsis-v"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 col-centered">
+                <div class="thumbnail">
+                    <div class="post-header">
+                        <div class="post-title"><h5>This is my first photo</h5></div>
+                        <div class="post-date"><p>12/14</p></div>
+                    </div>
+                    <img src="http://placeimg.com/640/480/any" alt="Anything" style="width:100%">
+                    <div class="post-footer">
+                        <div class="likes">
+                            <p>23 Likes</p>
+                        </div>
+                        <div class="caption">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                                commodo consequat.</p>
+                        </div>
+                        <div class="post-like-comment">
+                            <button type="button" class="btn btn-light btn-outline-dark border-0 post-heart"><i class="far fa-heart"></i></button>
+                            <input class="form-control post-comment border-0" type="text" name="comment" placeholder="Comment...">
+                            <button type="button" class="btn btn-link border-0 vertical-elipsis"><i class="fas fa-ellipsis-v"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 col-centered">
+                <div class="thumbnail">
+                    <div class="post-header">
+                        <div class="post-title"><h5>This is my first photo</h5></div>
+                        <div class="post-date"><p>12/14</p></div>
+                    </div>
+                    <img src="http://placeimg.com/640/480/people" alt="People" style="width:100%">
+                    <div class="post-footer">
+                        <div class="likes">
+                            <p>23 Likes</p>
+                        </div>
+                        <div class="caption">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                                commodo consequat.</p>
+                        </div>
+                        <div class="post-like-comment">
+                            <button type="button" class="btn btn-light btn-outline-dark border-0 post-heart"><i class="far fa-heart"></i></button>
+                            <input class="form-control post-comment border-0" type="text" name="comment" placeholder="Comment...">
+                            <button type="button" class="btn btn-link border-0 vertical-elipsis"><i class="fas fa-ellipsis-v"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 col-centered">
+                <div class="thumbnail">
+                    <div class="post-header">
+                        <div class="post-title"><h5>This is my first photo</h5></div>
+                        <div class="post-date"><p>12/14</p></div>
+                    </div>
+                    <img src="http://placeimg.com/640/480/tech" alt="Technology" style="width:100%">
+                    <div class="post-footer">
+                        <div class="likes">
+                            <p>23 Likes</p>
+                        </div>
+                        <div class="caption">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                                commodo consequat.</p>
+                        </div>
+                        <div class="post-like-comment">
+                            <button type="button" class="btn btn-light btn-outline-dark border-0 post-heart"><i class="far fa-heart"></i></button>
+                            <input class="form-control post-comment border-0" type="text" name="comment" placeholder="Comment...">
+                            <button type="button" class="btn btn-link border-0 vertical-elipsis"><i class="fas fa-ellipsis-v"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 col-centered">
+                <div class="thumbnail">
+                    <div class="post-header">
+                        <div class="post-title"><h5>This is my first photo</h5></div>
+                        <div class="post-date"><p>12/14</p></div>
+                    </div>
+                    <img src="http://placeimg.com/640/480/arch" alt="Nature" style="width:100%">
+                    <div class="post-footer">
+                        <div class="likes">
+                            <p>23 Likes</p>
+                        </div>
+                        <div class="caption">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                                commodo consequat.</p>
+                        </div>
+                        <div class="post-like-comment">
+                            <button type="button" class="btn btn-light btn-outline-dark border-0 post-heart"><i class="far fa-heart"></i></button>
+                            <input class="form-control post-comment border-0" type="text" name="comment" placeholder="Comment...">
+                            <button type="button" class="btn btn-link border-0 vertical-elipsis"><i class="fas fa-ellipsis-v"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 col-centered">
+                <div class="thumbnail">
+                    <div class="post-header">
+                        <div class="post-title"><h5>This is my first photo</h5></div>
+                        <div class="post-date"><p>12/14</p></div>
+                    </div>
+                    <img src="http://placeimg.com/640/480/any/sepia?t=1611583628887" alt="Sepia" style="width:100%">
+                    <div class="post-footer">
+                        <div class="likes">
+                            <p>23 Likes</p>
+                        </div>
+                        <div class="caption">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                                commodo consequat.</p>
+                        </div>
+                        <div class="post-like-comment">
+                            <button type="button" class="btn btn-light btn-outline-dark border-0 post-heart"><i class="far fa-heart"></i></button>
+                            <input class="form-control post-comment border-0" type="text" name="comment" placeholder="Comment...">
+                            <button type="button" class="btn btn-link border-0 vertical-elipsis"><i class="fas fa-ellipsis-v"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 col-centered">
+                <div class="thumbnail">
+                    <div class="post-header">
+                        <div class="post-title"><h5>This is my first photo</h5></div>
+                        <div class="post-date"><p>12/14</p></div>
+                    </div>
+                    <img src="http://placeimg.com/640/480/any/grayscale" alt="" style="width:100%">
+                    <div class="post-footer">
+                        <div class="likes">
+                            <p>23 Likes</p>
+                        </div>
+                        <div class="caption">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                                commodo consequat.</p>
+                        </div>
+                        <div class="post-like-comment">
+                            <button type="button" class="btn btn-light btn-outline-dark border-0 post-heart"><i class="far fa-heart"></i></button>
+                            <input class="form-control post-comment border-0" type="text" name="comment" placeholder="Comment...">
+                            <button type="button" class="btn btn-link border-0 vertical-elipsis"><i class="fas fa-ellipsis-v"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-xs-12 col-centered">
+                <div class="thumbnail">
+                    <div class="post-header">
+                        <div class="post-title"><h5>This is my first photo</h5></div>
+                        <div class="post-date"><p>12/14</p></div>
+                    </div>
+                    <img src="https://picsum.photos/640/480" alt="Nature" style="width:100%">
+                    <div class="post-footer">
+                        <div class="likes">
+                            <p>23 Likes</p>
+                        </div>
+                        <div class="caption">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                                commodo consequat.</p>
+                        </div>
+                        <div class="post-like-comment">
+                            <button type="button" class="btn btn-light btn-outline-dark border-0 post-heart"><i class="far fa-heart"></i></button>
+                            <input class="form-control post-comment border-0" type="text" name="comment" placeholder="Comment...">
+                            <button type="button" class="btn btn-link border-0 vertical-elipsis"><i class="fas fa-ellipsis-v"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+    crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
